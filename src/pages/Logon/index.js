@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import logoImg from '../../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 export default function Logon(){
     return (
@@ -11,8 +12,8 @@ export default function Logon(){
                 <form>
                     <input placeholder="Login"></input>
                     <input placeholder="Senha"></input>
-                    <button className="button" type="submit" href="/home">Entrar</button>
-                    <a href="/register"></a>
+
+                    <Link className="button" to="/home">Entrar</Link>
                 </form>
             </section>
 
